@@ -42,20 +42,22 @@ const arr3 = [
     [0,0,0]
 ];
 document.write("Matrix A (3 x 3):<br>");
-for(i=0; i<3; i++)
+for(i=0; i<arr1.length; i++)
 {
- for(j=0; j<3; j++)
+ for(j=0; j<arr1[i].length; j++)
   document.write(arr1[i][j] +" ");
  document.write("<br>");
 }
 
+
 document.write("Matrix B (3 x 3):<br>");
-for(i=0; i<3; i++)
+for(i=0; i<arr2.length; i++)
 {
- for(j=0; j<3; j++)
+ for(j=0; j<arr2[i].length; j++)
   document.write(arr2[i][j] +" ");
  document.write("<br>");
 }
+
 document.write("Sum of Matrix:<br>");
 for(i=0; i<3; i++)
 {
