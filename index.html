@@ -41,13 +41,31 @@ const arr3 = [
     [0,0,0],
     [0,0,0]
 ];
-for(var i = 0;i<3;i++){
-    for(var j = 0;j<3;j++)
-    ducomen.write(arr3[i][j]=arr1[i][j]+arr2[i][j]+" ")
-
-
+document.write("Matrix A (3 x 3):<br>");
+for(i=0; i<3; i++)
+{
+ for(j=0; j<3; j++)
+  document.write(arr1[i][j] +" ");
+ document.write("<br>");
 }
-ducomen.write("<br>")
+
+document.write("Matrix B (3 x 3):<br>");
+for(i=0; i<3; i++)
+{
+ for(j=0; j<3; j++)
+  document.write(arr2[i][j] +" ");
+ document.write("<br>");
+}
+document.write("Sum of Matrix:<br>");
+for(i=0; i<3; i++)
+{
+ for(j=0; j<3; j++)
+ {
+  arr3[i][j] = arr1[i][j] + arr2[i][j];
+  document.write(arr3[i][j] +" ");
+ }
+ document.write("<br>");
+}
 </script>
 
 </html>
